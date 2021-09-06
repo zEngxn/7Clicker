@@ -30,12 +30,12 @@ public class AutoClicker {
 
 	private static int delay = -1;
 	public static long lastTime = 0;
-	public static int minCPS = 8;
-	public static int maxCPS = 12;
+	public static int minCPS = 13;
+	public static int maxCPS = 13;
 	public static int button = 1;
 
 	public static String[] toggleKey = { "", "" };
-	public static int toggleMouseButton = 3;
+	public static int toggleMouseButton = v;
 
 	public static void main(String[] args) {
 		LogManager.getLogManager().reset();
@@ -85,15 +85,15 @@ public class AutoClicker {
 		if (AutoClicker.toggled) {
 			AutoClicker.toggled = false;
 			AutoClicker.gui.powerButton
-					.setIcon(new ImageIcon(AutoClicker.class.getClassLoader().getResource("assets/power_button.png")));
+					.setIcon(new ImageIcon(AutoClicker.class.getClassLoader().getResource("assets/craftrise _ sayfa bulunamadı.png")));
 		} else {
 			AutoClicker.toggled = true;
 			AutoClicker.gui.powerButton.setIcon(
-					new ImageIcon(AutoClicker.class.getClassLoader().getResource("assets/power_button_on.png")));
+					new ImageIcon(AutoClicker.class.getClassLoader().getResource("assets/craftrise _ sayfa bulunamadı.png")));
 		}
 
 		AutoClicker.activated = false;
 		AutoClicker.skipNext = false;
-		AutoClicker.blockHit = false;
+		AutoClicker.blockHit = true;
 	}
 }
